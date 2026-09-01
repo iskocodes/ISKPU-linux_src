@@ -1,0 +1,226 @@
+[gd_scene format=3 uid="uid://xw45ugb2m2gh"]
+
+[ext_resource type="Script" uid="uid://ceaxsakr1hfps" path="res://Src/main.gd" id="1_cv0qr"]
+[ext_resource type="Texture2D" uid="uid://bnnhx56mn77of" path="res://Assets/bg.png" id="1_sqjwk"]
+
+[node name="Control" type="Control" unique_id=609596797]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cv0qr")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1105770798]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_sqjwk")
+
+[node name="Label" type="Label" parent="." unique_id=2055986155]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -346.5
+offset_top = 31.0
+offset_right = 346.5
+offset_bottom = 114.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0.34901962)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+text = "Iskocode's Popup Utility"
+
+[node name="Label2" type="Label" parent="." unique_id=747748753]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -175.5
+offset_top = 132.0
+offset_right = 175.5
+offset_bottom = 187.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0.34901962)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 40
+text = "Make your popup!"
+
+[node name="Icon" type="VBoxContainer" parent="." unique_id=858482787]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -244.5
+offset_top = -60.0
+offset_right = -102.5
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Icon" unique_id=1252125972]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Icon/Type"
+
+[node name="OptionButton" type="OptionButton" parent="Icon" unique_id=300351684]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+selected = 0
+allow_reselect = true
+item_count = 5
+popup/item_0/text = "Critical"
+popup/item_0/id = 0
+popup/item_1/text = "Warning"
+popup/item_1/id = 1
+popup/item_2/text = "Info"
+popup/item_2/id = 2
+popup/item_3/text = "Question"
+popup/item_3/id = 3
+popup/item_4/text = "Enter Text"
+popup/item_4/id = 4
+
+[node name="Title" type="TextEdit" parent="." unique_id=1112852216]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -103.25
+offset_top = -40.0
+offset_right = 103.25
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/search_result_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Alert I guess"
+placeholder_text = "Alert I guess"
+wrap_mode = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1236089469]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.5
+offset_top = -79.0
+offset_right = 31.5
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Title"
+
+[node name="Content" type="TextEdit" parent="." unique_id=1588091763]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 109.75
+offset_top = -40.0
+offset_right = 316.25
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/search_result_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Alert I guess"
+placeholder_text = "Alert I guess"
+wrap_mode = 1
+
+[node name="Label4" type="Label" parent="." unique_id=2012278421]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 155.0
+offset_top = -82.0
+offset_right = 271.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Content"
+
+[node name="Button" type="Button" parent="." unique_id=1442486483]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -156.0
+offset_right = 140.0
+offset_bottom = -93.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.26293218, 0.26293254, 0.26293305, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.2627451, 0.2627451, 0.2627451, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.2627451, 0.2627451, 0.2627451, 1)
+theme_override_font_sizes/font_size = 40
+text = "Execute!"
+
+[node name="CheckButton" type="CheckButton" parent="." unique_id=2119410095]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 159.0
+offset_top = -157.0
+offset_right = 355.0
+offset_bottom = -93.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_colors/button_checked_color = Color(0, 0.3529412, 0.8784314, 1)
+text = "Close window
+after execution"
+
+[connection signal="button_down" from="Button" to="." method="_on_execute"]
